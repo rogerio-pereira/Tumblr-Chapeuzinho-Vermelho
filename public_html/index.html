@@ -9,28 +9,110 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
 	<head>
-		<title>		#TITULO# 		</title>
+		<title>		{Title}		</title>
 
 		<!--Meta Tags-->
-		<meta name="description" content=	"" />
-		<meta name="keywords" content=	"" />
+		{block:Description}
+			<meta name='description' content='{MetaDescription}' />
+		{/block:Description}
+		<meta name='keywords' content='' />
 		<meta charset='UTF-8' />
-
-		<!--FavIcon-->
-		<link rel="shortcut icon" type="image/x-icon" href="app.view/img/favicon.ico" />
-
+		
 		<!--Acentos-->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+		<!--FavIcon-->
+		<link rel='shortcut icon' type='image/x-icon' href='{Favicon}' />
+		<link rel='alternate' type='application/rss+xml' href='{RSS}'>
+
 		<!--Fontes-->
 
-		<!--CSS-->
-
 		<!--JQuery-->
-
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+		
 		<!--JavaScript-->
+		<script type="text/javascript">
+			$(document).ready(function() 
+			{
+				$('.slideshow').cycle({
+					fx:			'fade', 
+					speed:		1000, 
+					timeout:	10000,
+					random:		1 
+				});
+			});
+		</script>
+		
+		<!--CSS-->
+		<style type="text/css">
+			body
+			{
+				padding:	0px;
+				margin:		0px;
+				text-align: center;
+			}
+			div.slideshow
+			{
+				position:	absolute;
+				top:		0px;
+				left:		0px;
+				width:		100%;
+				height:		100%;
+				overflow:	hidden;
+			}
+			div.slideshow img
+			{
+				position:	absolute;
+				top:		0px;
+				left:		0px;
+				width:		100%;
+				height:		100%;
+			}
+			
+			div.page
+			{
+				position:	absolute;
+				width:		100%;
+				overflow:	auto;
+				top:		0px;
+				margin:		0px;
+				padding:	0px;
+			}
+			div.center
+			{
+				position:							relative;
+				width:								1000px;
+				margin-left:						auto;
+				margin-right:						auto;
+				
+				background-color:					rgba(203,203,203,.7);
+				z-index:							10;
+				
+				-webkit-border-bottom-right-radius:	50px;
+				-webkit-border-bottom-left-radius:	50px;
+				-moz-border-radius-bottomright:		50px;
+				-moz-border-radius-bottomleft:		50px;
+				border-bottom-right-radius:			50px;
+				border-bottom-left-radius:			50px;
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div class='slideshow'>
+			<img src='http://static.tumblr.com/7w6ueez/ICNne3tad/london_panorama_from_st_pauls-wallpaper-1600x1200.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/2Fine3xtf/london-black-and-white-wallpaper-egk4cgpm-e1395682724637.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/V4ane3zr4/501.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/3zIne4038/362602-admin.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/COyne460a/london-wallpaper-9460-9953-hd-wallpapers.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/FlIne462d/24457-travel_overlooking_paris_wallpaper.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/2LPne404o/london_wallpaper_13_1080p_hd.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/Epqne4066/louvre_pyramid_at_night_paris_france_wallpaper_hd_wide-1920x1080.jpg'>
+		</div>
+		<div class='page'>
+			<div class='center'>
+				dasdas
+			</div>
+		</div>
 	</body>
 </html>
