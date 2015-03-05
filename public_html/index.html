@@ -5,6 +5,15 @@
  *	Sistema:	TumblrSarah
  *	Autor:      Rogério Eduardo Pereira
  *	Data:       23/02/2015
+ *
+ *  Layout Criado para o tumblr
+ *  http://redhead-redcape.tumblr.com/
+ *	Ou a qualquer outro Pertencente a Sarah Jessica Xavier Pereira
+ *
+ *	Autor
+ *  Rogério Eduardo Pereira - http://farofa-pereira.tumblr.com/
+ *
+ *  Todos os direitos reservados
 -->
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
@@ -23,9 +32,11 @@
 
 		<!--FavIcon-->
 		<link rel='shortcut icon' type='image/x-icon' href='{Favicon}' />
-		<link rel='alternate' type='application/rss+xml' href='{RSS}'>
+		<link rel='alternate' type='application/rss+xml' href='{RSS}' />
 
 		<!--Fontes-->
+		<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css' />
 
 		<!--JQuery-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
@@ -48,13 +59,51 @@
 		<style type="text/css">
 			body
 			{
-				padding:	0px;
-				margin:		0px;
-				text-align: center;
+				padding:		0px;
+				margin:			0px;
+				text-align:		center;
+				font-family:	'Calligraffitti', cursive;
+				color:			#e23dca;
+				font-size:		1.4em;
+				font-weight:	bold;
+			}
+			a
+			{
+				font-family:		'Tangerine', cursive;
+				font-size:			1.4em;
+				color:				#842f80;
+				text-decoration:	none;
+				
+				-webkit-transition: all .5s ease-in;
+				-moz-transition:	all .5s ease-in;
+				-ms-transition:		all .5s ease-in;
+				-o-transition:		all .5s ease-in;
+				transition:			all .5s ease-in;
+			}
+			a:hover
+			{
+				color:				#ffffff;
+				text-decoration:	underline;
+			}
+			h1,h2,h3,h4,h5,h6
+			{
+				padding-top:	0px;
+				margin-top:		0px;
+				padding-bottom: 0px;
+				margin-bottom:	0px;
+			}
+			hr
+			{
+				border:				0;
+				height:				2px;
+				background-image:	-webkit-linear-gradient(left,	rgba(132,47,128,0), rgba(132,47,128,1), rgba(132,47,128,0)); 
+				background-image:   -moz-linear-gradient(left,		rgba(132,47,128,0), rgba(132,47,128,1), rgba(132,47,128,0)); 
+				background-image:   -ms-linear-gradient(left,		rgba(132,47,128,0), rgba(132,47,128,1), rgba(132,47,128,0)); 
+				background-image:   -o-linear-gradient(left,		rgba(132,47,128,0), rgba(132,47,128,1), rgba(132,47,128,0)); 
 			}
 			div.slideshow
 			{
-				position:	absolute;
+				position:	fixed;
 				top:		0px;
 				left:		0px;
 				width:		100%;
@@ -86,7 +135,8 @@
 				margin-left:						auto;
 				margin-right:						auto;
 				
-				background-color:					rgba(203,203,203,.7);
+				background-color:	rgba(0,0,0,.8);
+				
 				z-index:							10;
 				
 				-webkit-border-bottom-right-radius:	50px;
@@ -96,22 +146,275 @@
 				border-bottom-right-radius:			50px;
 				border-bottom-left-radius:			50px;
 			}
+			header
+			{
+				position:		relative;
+				top:			0px;
+				margin-top:		0px;
+				padding-top:	0px;
+			}
+			nav
+			{
+				position:			relative;
+				top:				0px;
+				width:				100%;
+				background-color:	rgba(226,61,202,.8);
+			}
+			nav ul
+			{
+				list-style: none;
+			}
+			nav ul li 
+			{
+				display:		inline-block;
+				padding-top:	5px;
+				padding-left:	30px;
+				padding-right:	30px;
+			}
+			nav ul li a
+			{
+				color: #2f292e;
+			}
+			
+			span.fonte
+			{
+				color:	#842f80;
+			}
+			
+			div.fimPost div
+			{
+				display: block;
+				font-size: .6em;
+			}
+			div.fimPost div a.notas
+			{
+				font-size:	1.7em;
+			}
+			div.fimPost div a.reblogar
+			{
+				font-size: 2.3em
+			}
 		</style>
 	</head>
 	<body>
 		<div class='slideshow'>
-			<img src='http://static.tumblr.com/7w6ueez/ICNne3tad/london_panorama_from_st_pauls-wallpaper-1600x1200.jpg'>
-			<img src='http://static.tumblr.com/7w6ueez/2Fine3xtf/london-black-and-white-wallpaper-egk4cgpm-e1395682724637.jpg'>
-			<img src='http://static.tumblr.com/7w6ueez/V4ane3zr4/501.jpg'>
-			<img src='http://static.tumblr.com/7w6ueez/3zIne4038/362602-admin.jpg'>
-			<img src='http://static.tumblr.com/7w6ueez/COyne460a/london-wallpaper-9460-9953-hd-wallpapers.jpg'>
-			<img src='http://static.tumblr.com/7w6ueez/FlIne462d/24457-travel_overlooking_paris_wallpaper.jpg'>
-			<img src='http://static.tumblr.com/7w6ueez/2LPne404o/london_wallpaper_13_1080p_hd.jpg'>
-			<img src='http://static.tumblr.com/7w6ueez/Epqne4066/louvre_pyramid_at_night_paris_france_wallpaper_hd_wide-1920x1080.jpg'>
+			<img src='http://static.tumblr.com/7w6ueez/vPsnkqp4f/london_panorama_from_st_pauls-wallpaper-1600x1200.jpg' />
+			<img src='http://static.tumblr.com/7w6ueez/2Fine3xtf/london-black-and-white-wallpaper-egk4cgpm-e1395682724637.jpg' />
+			<img src='http://static.tumblr.com/7w6ueez/q6snkqp7g/501.jpg' />
+			<img src='http://static.tumblr.com/7w6ueez/ihPnkqpa5/362602-admin.jpg' />
+			<img src='http://static.tumblr.com/7w6ueez/9qankqpvu/london-wallpaper-9460-9953-hd-wallpapers.jpg' />
+			<img src='http://static.tumblr.com/7w6ueez/FlIne462d/24457-travel_overlooking_paris_wallpaper.jpg' />
+			<img src='http://static.tumblr.com/7w6ueez/2LPne404o/london_wallpaper_13_1080p_hd.jpg' />
+			<img src='http://static.tumblr.com/7w6ueez/4U0nkqpx6/louvre_pyramid_at_night_paris_france_wallpaper_hd_wide-1920x1080.jpg' />
 		</div>
 		<div class='page'>
 			<div class='center'>
-				dasdas
+				<!--Cabeçalho-->
+				<header>
+					<figure class='img-perfil'>
+						<img src='{PortraitURL-128}' title='{Title}' />
+					</figure>
+					<h1>
+						{Title}
+					</h1>
+				</header>
+				<nav>
+					<ul>
+						<li>
+							<a href="./">Tumblr</a>
+						</li>
+						<li>
+							<a href="/about">About</a>
+						</li>
+						<li>
+							<a href="/ask">Ask</a>
+						</li>
+					</ul>
+				</nav>
+				<section>
+				<!--PARTE DOS POSTS 
+					FEITO POR Manuella W. - adolescentedramatica.
+					http://static.tumblr.com/jo2amr0/i4jmf6tnj/blocks_de_postagem_-_tumblr.txt
+				-->
+				<article>
+					{block:Posts}
+
+						<!--TEXTOS-->
+						{block:Text}
+							<div class="posts">
+								{block:Title}
+									<a href="{Permalink}" class="title">
+										<h1>{Title}</h1>
+									</a>
+								{/block:Title}
+								{Body}
+							</div>
+						{/block:Text}
+
+						<!--PERGUNTAS E MENSAGENS-->
+						{block:Answer}
+							<div class="posts">
+								<strong>	{Asker} </strong> Disse: {Question} <br/><br/>
+								<div id="data">
+									{block:Date}
+										{ShortDayOfWeek}, {DayOfMonth}/{MonthNumber}/{Year}<br/>
+										{12Hour}:{Minutes} {AmPm}, {TimeAgo}
+									{/block:Date}<br/>
+									<a href={ReblogURL} target="_blank">Reblogar</a>
+								</div>
+								Respondi: {Answer}
+							</div>
+						{/block:Answer}
+
+
+						<!--LINKS-->
+						{block:Link}
+							<div class="posts">
+								<a href="{URL}">
+									<h1> {Name} </h1>
+								</a>
+								{block:Description}
+									{Description}
+								{/block:Description}
+							</div>
+						{block:Link}
+
+
+						<!--FOTOS-->
+						{block:Photo}
+							<div class="posts">
+								<div class='center'>
+									{LinkOpenTag}
+										<img src="{PhotoURL-500}" title="{PhotoAlt}" width="480px" />
+									{LinkCloseTag}
+								</div>
+								{block:Caption}
+									{Caption}
+								{/block:Caption}
+							</div>
+						{/block:Photo}
+
+						<!-- PHOTOSET -->
+						{block:Photoset}
+							<div class='center'>
+								{Photoset-500}
+							</div>
+							{block:Caption}
+								{Caption} 
+							{/block:Caption}
+						{/block:Photoset}
+
+						<!--FRASES-->
+						{block:Quote}
+							<div class="posts">
+								<strong> "{Quote}"</strong>
+								{block:Source}
+								&mdash; <span class='fonte'>{Source}</span>
+								{/block:Source}
+							</div>
+						{/block:Quote}
+
+						<!--DIALOGOS-->
+						{block:Chat}
+							<div class="posts">
+								{block:Title}
+									<a href="{Permalink}">
+										<h1>{Title}</h1>
+									</a>
+								{/block:Title}
+								<table>
+									{block:Lines}
+										<tr>
+											{block:Label}
+												<td class="name">
+													{Label}
+												</td>
+											{block:Label}
+											<td class="words">
+												{Line}
+											</td>
+										</tr>
+									{/block:Lines}
+								</table>
+							</div>
+						{/block:Chat}
+
+						<!--MUSICAS-->
+						{block:Audio}
+							<div class="posts">
+								<div style="float:right; margin-top: 6px;">
+									<i>Player Ligado {PlayCount} vezes</i> 
+									{block:ExternalAudio}
+										(<a href="{ExternalAudioURL}">download!</a>)
+									{/block:ExternalAudio}
+								</div>
+								<div class='center'>
+									{AudioPlayerWhite}
+								</div>
+								{block:Caption}
+									{Caption}
+								{/block:Caption}
+							</div>
+						{/block:Audio}
+
+						<!--VIDEOS-->
+						{block:Video}
+							<div class="posts">
+								<div class='center'>
+									{Video-500}
+								</div>
+								{block:Caption}
+									{Caption}
+								{/block:Caption}
+							</div>
+						{/block:Video}
+
+						<div class="fimPost">
+							<div>
+								{block:Date}
+									{ShortDayOfWeek}, {DayOfMonth}/{MonthNumber}/{Year}
+									{12Hour}:{Minutes} {AmPm}, {TimeAgo}
+								{/block:Date}
+							</div>
+							
+							<div>
+								<!--NUMERO NOTAS-->
+								{block:NoteCount}
+									<a href={ShortURL} class='notas'>
+										{NoteCount} Notas
+									</a>
+								{/block:NoteCount}
+							</div>	
+							
+							<div>
+								<a href={ReblogURL} target="_blank" class='reblogar'>	Reblogar	</a>
+							</div>
+								
+							<div>
+								<!--NOTAS DENTRO DO POST... DETALHES DAS NOTAS-->
+								{block:PostNotes}
+									<div id="post_notes">
+										{PostNotes}
+									</div>
+								{/block:PostNotes}
+							</div>
+						</div>
+						<hr>
+					{/block:Posts}
+				</article>
+
+				<!--PAGINAÇÃO
+					Paginação by madlyluv.com
+				-->
+				<div id="paginacaoml" align="center"><span class="info" style="font-weight: normal;">Página <b>{CurrentPage}</b> de <b>{TotalPages}</b></span> 
+					{block:Pagination}{block:PreviousPage}<a href="{PreviousPage}">&laquo;</a>{/block:PreviousPage}{/block:Pagination}
+					{block:JumpPagination length="10"}
+					{block:CurrentPage}<span class="pagina_atual">{PageNumber}</span>{/block:CurrentPage}
+					{block:JumpPage}<a class="jump_page" href="{URL}">{PageNumber}</a>{/block:JumpPage}
+					{/block:JumpPagination}
+					{block:Pagination}{block:NextPage}<a href="{NextPage}">&raquo;</a>{/block:NextPage}{/block:Pagination}	
+				</div>
+			</section>
 			</div>
 		</div>
 	</body>
